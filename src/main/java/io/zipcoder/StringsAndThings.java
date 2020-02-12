@@ -108,6 +108,14 @@ public class StringsAndThings {
      *            countTriple("a") // Should return 0
      */
     public Integer countTriple(String input){
-        return null;
+        int tripleCount = 0;
+        char [] split = input.toCharArray();
+        for (int i = 0; i < split.length - 1; i++) {
+            if (split[i] == split[i+1] && split[i+1] == split[i+2]) {
+                tripleCount++;
+            }
+        }
+
+        return tripleCount;
     }
 }
