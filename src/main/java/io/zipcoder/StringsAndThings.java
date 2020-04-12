@@ -24,7 +24,8 @@ public class StringsAndThings {
                 }
             }
         }
-        if (split[split.length -1]  == 'y' || split[split.length -1]  == 'z') {instanceCount++;}
+        if (split[split.length -1]  == 'y' || split[split.length -1]  == 'z') {
+            instanceCount++;}
 
         return instanceCount;
     }
